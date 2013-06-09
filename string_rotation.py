@@ -8,7 +8,7 @@ word_chars = string.letters + "0123456789_"
 def rot13ish(s):
     """
     returns a rot13 version of a string with every other word reversed
-    It uses whitespace as word boundaries
+    It uses non word characters as word boundaries
     """
     words = re.split(r'(\w*)', s)
     output = []
